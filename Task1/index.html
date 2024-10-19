@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" href="imgs/logo.jpg.png">
+    <!-- Updated Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:wght@100;400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+    <div class="container">
+        <h1 class="title">📋To Do List</h1>
+        <div class="input-task">
+            <input type="text" placeholder="Add New Task" id="task-name" required>
+            <textarea name="description" id="description" placeholder="Description" required></textarea>
+            <div class="date-picker">
+                <label for="task-date">Date</label>
+                <input type="date" id="task-date" required>
+            </div>
+            <button class="btn" id="addBtn">ADD</button>
+            <span id="message"></span>
+        </div>
+        <div id="tasks-container"></div>
+        <div class="completed-tasks">
+            <h2>✅ Completed Tasks</h2>
+            <div id="completeContainer" ></div>
+        </div>
+    </div>
+</main>
+<!-- Toast message container -->
+<div id="toast-container"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
